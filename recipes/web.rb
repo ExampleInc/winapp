@@ -44,11 +44,29 @@ app_directory = 'C:\inetpub\apps\Customers'
 site_directory = 'C:\inetpub\sites\Customers'
 
 # Download the built Customers application and unzip it to the app directory.
-windows_zipfile app_directory do
-  source 'https://github.com/learn-chef/manage-a-web-app-windows/releases/download/v0.1.0/Customers.zip'
-  action :unzip
+#windows_zipfile app_directory do
+#  source 'https://github.com/learn-chef/manage-a-web-app-windows/releases/download/v0.1.0/Customers.zip'
+#  action :unzip
+#  not_if { ::File.exists?(app_directory) }
+#end
+
+# Copy application source files to a web directory
+cookbook_file 'dll_library' do
+  source 'app/bin/Customers.dll'
+  action :create
   not_if { ::File.exists?(app_directory) }
 end
+cookbook_file 'aspx_module' do
+  source 'app/Customers.aspx'
+  action :create
+  not_if { ::File.exists?(app_directory) }
+end
+cookbook_file 'web_config' do
+  source 'app/Web.config'
+  action :create
+  not_if { ::File.exists?(app_directory) }
+end
+
 
 # Create the Products app pool.
 iis_pool 'Products' do
