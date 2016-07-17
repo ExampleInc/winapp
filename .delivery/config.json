@@ -4,6 +4,9 @@
     "name": "build-cookbook",
     "path": ".delivery/build-cookbook"
   },
+  "build_nodes": {
+    "default"    : ["name:windowsnode01"]
+  },
   "skip_phases": [],
   "build_nodes": {},
   "dependencies": []
