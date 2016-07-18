@@ -5,7 +5,7 @@
     "path": ".delivery/build-cookbook"
   },
   "build_nodes": {
-    "default"    : ["name:windowsnode01"]
+    "default"    : []
   },
   "skip_phases": [],
   "build_nodes": {},
