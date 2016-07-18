@@ -5,7 +5,9 @@
     "path": ".delivery/build-cookbook"
   },
   "build_nodes": {
-    "default"    : []
+    "default"    : ["platform_family:windows"],
+    "unit"       : ["platform_family:windows"],
+    "syntax"     : ["platform_family:windows"]
   },
   "skip_phases": [],
   "build_nodes": {},
