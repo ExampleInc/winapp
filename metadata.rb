@@ -4,7 +4,7 @@ maintainer_email 'you@example.com'
 license 'all_rights'
 description 'Installs/Configures winapp'
 long_description 'Installs/Configures winapp'
-version '0.1.16'
+version '0.1.17'
 
 depends 'sql_server', '~> 2.5.0'
 depends 'iis', '~> 4.1.6'
