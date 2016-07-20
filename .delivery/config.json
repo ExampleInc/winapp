@@ -13,5 +13,5 @@
     "publish": {
       "chef_server": true
     }
-
+  }
 }
