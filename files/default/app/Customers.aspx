@@ -7,7 +7,7 @@
     <title>Customers</title>
     <style>
       table, th, td {
-        border: 5px solid black;
+        border: 15px solid blue;
         border-collapse: collapse;
         font-family: sans-serif;
         padding: 5px;
