@@ -4,10 +4,14 @@
     "name": "build-cookbook",
     "path": ".delivery/build-cookbook"
   },
-  "build_nodes": {
-    "default"    : ["name:windowsnode01"]
-  },
-  "skip_phases": ['unit'],
+  "skip_phases": [
+   "unit"
+  ],
   "build_nodes": {},
-  "dependencies": []
+  "dependencies": [],
+  "delivery-truck": {
+    "publish": {
+      "chef_server": true
+    }
+  }
 }
