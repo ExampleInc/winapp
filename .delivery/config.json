@@ -11,8 +11,6 @@
    "functional"
   ],
   "build_nodes": {
-    "provision": ["*01 AND platform:windows"],
-    "deploy": ["*02 AND platfrom:windows"]
   },
   "dependencies": [],
   "delivery-truck": {
