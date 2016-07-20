@@ -8,5 +8,10 @@
    "unit"
   ],
   "build_nodes": {},
-  "dependencies": []
+  "dependencies": [],
+  "delivery-truck": {
+    "publish": {
+      "chef_server": true
+    }
+  }
 }
