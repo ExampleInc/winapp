@@ -51,7 +51,7 @@ files = %w(Customers.dll Customers.aspx Web.config)
 #  not_if { ::File.exists?(app_directory) }
 #end
 
-directory app_directory do
+directory File.join(app_directory, 'bin') do
   recursive true
 end
 
@@ -59,6 +59,10 @@ files.each do |file|
   cookbook_file File.join(app_directory, file) do
     source 'app/' + file
   end
+end
+
+cookbook_file File.join(app_directory + '/bin/', 'Customers.dll') do
+  source 'app/Customers.dll'
 end
 
 ### Copy application source files to a web directory
