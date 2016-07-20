@@ -13,7 +13,7 @@
         padding: 5px;
       }
       table tr:nth-child(even) td {
-        background-color: #00bc91;
+        background-color: #9923bc;
       }
     </style>
 </head>
