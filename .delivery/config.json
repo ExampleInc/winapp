@@ -8,7 +8,8 @@
    "unit",
    "quality",
    "security",
-   "functional"
+   "functional",
+   "syntax"
   ],
   "build_nodes": {
   },
