@@ -57,7 +57,7 @@ end
 
 files.each do |file|
   cookbook_file File.join(app_directory, file) do
-    source file
+    source 'app/' + file
   end
 end
 
