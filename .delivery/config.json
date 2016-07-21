@@ -12,10 +12,6 @@
    "syntax"
   ],
   "build_nodes": {
-    "acceptance": ["name:acceptance*.example.com AND platform:windows"],
-    "union": ["name:union*.example.com AND platform:windows"],
-    "rehearsal": ["name:rehearsal*.example.com AND platform:windows"],
-    "delivered": ["name:delivered*.example.com AND platform:windows"]
   },
   "dependencies": [],
   "delivery-truck": {
