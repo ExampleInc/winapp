@@ -7,10 +7,10 @@
     <title>Customers</title>
     <style>
       table, th, td {
-        border: 2px solid magenta;
+        border: 9px solid magenta;
         border-collapse: collapse;
         font-family: sans-serif;
-        padding: 2px;
+        padding: 12px;
       }
       table tr:nth-child(even) td {
         background-color: #321123;
